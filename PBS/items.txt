@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 1,REPEL,Repel,Repels,1,400,"An item that prevents weak wild Pokémon from appearing for 100 steps after its use.",2,0,0,
 2,SUPERREPEL,Super Repel,Super Repels,1,700,"An item that prevents weak wild Pokémon from appearing for 200 steps after its use.",2,0,0,
@@ -646,3 +646,10 @@
 631,NSOLARIZER,N-Solarizer,N-Solarizers,8,0,"A machine to fuse Necrozma, which needs light, and Solgaleo.",5,0,6,
 632,NLUNARIZER,N-Lunarizer,N-Lunarizers,8,0,"A machine to fuse Necrozma, which needs light, and Lunala.",5,0,6,
 633,MEGARING,Mega Ring,Mega Rings,8,0,"This ring contains an untold power that somehow enables Pokémon carrying Mega Stones to Mega Evolve.",0,0,6,
+#-------------------------------
+634,DAYCARESIGHT,DayCare Sight,DayCare Sights,8,0,"A small device that tells you the status of your daycare pair.",2,0,6
+635,ENCOUNTERCHECKER,Encounter Checker,Encounter Checkers,8,0,"A convenient checker that shows you what pokemon are available on each route",2,0,6
+636,UNOWNREPORT,Unown Report,Unown Reports,8,0,"A report on the Unown. Lists those you have caught",2,0,6
+637,ENCOUNTERTESTER,Encounter Tester,Encounter Testers,8,0,"A convenient item that allows you to specify which encounter you want",2,0,6
+638,POCKETPC,Pocket PC,Pocket PCs,8,0,"Allows you to access your PC on the move",2,0,6
+639,VIVILLONREPORT,Vivillon Report,Vivillon Reports,8,0,"A report on the Vivillon. Lists those you have caught",2,0,6
