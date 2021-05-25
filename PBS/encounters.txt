@@ -17,6 +17,14 @@ LandNight,21
     20,BIDOOF,5,10
     20,ODDISH,5,10
     20,STARLY,5,10
+OldRod
+    100,MAGIKARP,5
+GoodRod
+    50,MAGIKARP,15
+    50,STARYU,15
+SuperRod
+    50,MAGIKARP,40
+    50,TENTACRUEL,40
 Event,21
     100,SUDOWOODO,30
 #-------------------------------
@@ -32,6 +40,8 @@ HeadbuttHigh
 HeadbuttLow
     75,LEDYBA,10
     25,SPINARAK,10
+OldRod
+    100,MAGIKARP,5
 #-------------------------------
 [009] # Vivillon House
 Event,21

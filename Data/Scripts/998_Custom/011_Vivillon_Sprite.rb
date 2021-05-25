@@ -21,7 +21,7 @@ end
 
 def getVivillonFormName(form = 0)
     forms = [:VIVILLON, :VIVILLON_1, :VIVILLON_2, :VIVILLON_3, :VIVILLON_4, :VIVILLON_5, :VIVILLON_6, :VIVILLON_7, :VIVILLON_8, :VIVILLON_9, :VIVILLON_10, :VIVILLON_11, :VIVILLON_12, :VIVILLON_13, :VIVILLON_14, :VIVILLON_15, :VIVILLON_16, :VIVILLON_17, :VIVILLON_18, :VIVILLON_19]
-  species = forms[0]
+  species = forms[form]
   species_data = GameData::Species.get(species)
   
   return species_data.real_form_name
