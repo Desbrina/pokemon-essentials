@@ -2,6 +2,7 @@
 Audio/
 Graphics/
 Plugins/
+1. Data & PBS Backup/
 
 # Data folder, but not Data/Scripts folder
 Data/*

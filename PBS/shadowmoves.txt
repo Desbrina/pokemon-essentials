@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 BUTTERFREE = SHADOWRUSH,SHADOWMIST
 BEEDRILL = SHADOWBLITZ,SHADOWHOLD
@@ -83,3 +83,4 @@ DUSKULL = SHADOWHOLD,SHADOWWAVE
 SNORUNT = SHADOWSHED,SHADOWWAVE
 SPHEAL = SHADOWWAVE,SHADOWMIST
 SALAMENCE = SHADOWRUSH,SHADOWHOLD
+PONYTA = SHADOWFIRE,SHADOWDOWN

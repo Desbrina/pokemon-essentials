@@ -2,9 +2,9 @@
 #-------------------------------
 [004] # Lab
 Event,21
+    33,PANPOUR,30
     33,PANSAGE,30
     33,PANSEAR,30
-    33,PANPOUR,30
 #-------------------------------
 [006] # Route 1
 LandDay,21
@@ -28,6 +28,11 @@ SuperRod
 Event,21
     100,SUDOWOODO,30
 #-------------------------------
+[007] # Foren
+OldRod
+    80,MAGIKARP,5,15
+    20,STARYU,11,14
+#-------------------------------
 [008] # Forest Gardens
 Land,33
     75,SUNKERN,5,9
@@ -47,14 +52,6 @@ OldRod
 Event,21
     5,VIVILLON,1
     5,VIVILLON_1,1
-    5,VIVILLON_2,1
-    5,VIVILLON_3,1
-    5,VIVILLON_4,1
-    5,VIVILLON_5,1
-    5,VIVILLON_6,1
-    5,VIVILLON_7,1
-    5,VIVILLON_8,1
-    5,VIVILLON_9,1
     5,VIVILLON_10,1
     5,VIVILLON_11,1
     5,VIVILLON_12,1
@@ -65,3 +62,36 @@ Event,21
     5,VIVILLON_17,1
     5,VIVILLON_18,1
     5,VIVILLON_19,1
+    5,VIVILLON_2,1
+    5,VIVILLON_3,1
+    5,VIVILLON_4,1
+    5,VIVILLON_5,1
+    5,VIVILLON_6,1
+    5,VIVILLON_7,1
+    5,VIVILLON_8,1
+    5,VIVILLON_9,1
+#-------------------------------
+[010] # Crescent Cave 1F
+Event,21
+    100,ROCKRUFF,15
+#-------------------------------
+[013] # Crescent Cave B1F
+OldRod
+    80,MAGIKARP,9,14
+    20,STARYU,13
+Cave,5
+    60,ZUBAT,11,16
+    20,GEODUDE,10
+    10,GRAVELER,16
+    10,ONIX,15
+#-------------------------------
+[014] # Crescent Cave B2F
+OldRod
+    80,MAGIKARP,9,14
+    20,STARYU,13
+Cave,5
+    60,ZUBAT,11,16
+    10,GEODUDE,10
+    10,DIGLETT,10
+    10,GRAVELER,16
+    10,ONIX,15

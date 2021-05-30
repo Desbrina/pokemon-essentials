@@ -8,7 +8,7 @@ WildVictoryME = Battle victory wild.ogg
 TrainerVictoryME = Battle victory trainer.ogg
 SurfBGM = Surfing.mid
 BicycleBGM = Bicycle.mid
-PlayerA = POKEMONTRAINER_Leaf,girl,girl-bike,girl-surf,girl-run,girl_dive_offset,girl_fish_offset,girl_fishsurf_offset
+PlayerA = POKEMONTRAINER_Leaf,girl,girl-bike,girl-surf,girl-run,girl_dive_offset,girl-fish,girl-fish
 #-------------------------------
 [001]
 # Home
@@ -58,3 +58,27 @@ ShowArea = false
 Bicycle = false
 BicycleAlways = false
 MapPosition = 0,3,9
+#-------------------------------
+[010]
+# Crescent Cave 1F
+ShowArea = true
+MapPosition = 0,3,10
+#-------------------------------
+[011]
+# Pokémon Center
+HealingSpot = 7,13,12
+MapPosition = 0,2,10
+#-------------------------------
+[012]
+# Fisherman Sam's House
+MapPosition = 0,2,10
+#-------------------------------
+[013]
+# Crescent Cave B1F
+ShowArea = true
+MapPosition = 0,3,10
+#-------------------------------
+[014]
+# Crescent Cave B2F
+ShowArea = true
+MapPosition = 0,3,10

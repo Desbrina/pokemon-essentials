@@ -73,7 +73,7 @@ class PokemonMapEncountersScene2
           if owned && (seenFormM || seenFormF)
             @sprites["caught#{i}"].setBitmap("Graphics/Pictures/Custom/mapencounters-caught")
             seen+=1; caught+=1
-          elsif $Trainer.pokedex.seen_form?(species,0,species_data.form)
+          elsif (seenFormM || seenFormF)
             seen+=1
           else
             @sprites["icon#{i}"].tone=Tone.new(-255,-255,-255) # Blacked out
