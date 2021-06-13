@@ -95,3 +95,5 @@ Cave,5
     10,DIGLETT,10
     10,GRAVELER,16
     10,ONIX,15
+Event
+    100,SABLEYE,15
