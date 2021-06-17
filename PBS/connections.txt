@@ -1,10 +1,12 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-# Route 1 (6) - Vien (3)
-6,North,0,3,South,0
+# Route 1 (6) - Foren (7)
+6,South,2,7,North,0
+# Forest Gardens (8) - Foren (7)
+8,West,44,7,East,0
+# Route 2 (15) - Foren (7)
+15,North,2,7,South,0
+# Vien (3) - Route 1 (6)
+3,South,0,6,North,0
 # Forest Gardens (8) - Route 1 (6)
 8,West,0,6,East,47
-# Foren (7) - Route 1 (6)
-7,North,0,6,South,2
-# Foren (7) - Forest Gardens (8)
-7,East,0,8,West,44

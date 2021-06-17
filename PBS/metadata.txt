@@ -82,3 +82,11 @@ MapPosition = 0,3,10
 # Crescent Cave B2F
 ShowArea = true
 MapPosition = 0,3,10
+#-------------------------------
+[015]
+# Route 2
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,11
+MapSize = 1,11

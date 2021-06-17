@@ -97,3 +97,15 @@ Cave,5
     10,ONIX,15
 Event
     100,SABLEYE,15
+#-------------------------------
+[015] # Route 2
+LandDay,21
+    40,RATTATA,7,10
+    20,BIDOOF,8,10
+    20,ODDISH,8,10
+    20,STARLY,7,10
+LandNight,21
+    40,RATTATA_1,8,10
+    20,BIDOOF,9,10
+    20,ODDISH,9,10
+    20,STARLY,8,10
