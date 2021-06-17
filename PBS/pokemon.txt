@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [1]
 Name = Bulbasaur
@@ -324,7 +324,7 @@ Color = Green
 Shape = Insectoid
 Habitat = Forest
 Kind = Worm
-Pokedex = Its voracious appetite compels it to devour leaves bigger than itself without hesitation. It releases a terribly strong odor from its antennae.
+Pokedex = Its voracious appetite compels it to devour leaves bigger than itself without hesitation. It releases a terribly strong odour from its antennae.
 Generation = 1
 BattlerPlayerX = -5
 BattlerPlayerY = 0
