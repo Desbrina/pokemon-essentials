@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 0,POKEMONTRAINER_Red,Pokémon Trainer,60,,,,Male,,
 1,POKEMONTRAINER_Leaf,Pokémon Trainer,60,,,,Female,,
@@ -7,7 +7,7 @@
 4,RIVAL1,Rival,16,,,,Male,,
 5,RIVAL2,Rival,36,,,,Male,,
 6,AROMALADY,Aroma Lady,32,,,,Female,,
-7,BEAUTY,Beauty,56,,,,Female,,
+7,BEAUTY,Beauty,56,,,TrainerEyes_Beauty,Female,,
 8,BIKER,Biker,32,,,,Male,,
 9,BIRDKEEPER,Bird Keeper,32,,,,Male,,
 10,BUGCATCHER,Bug Catcher,16,,,,Male,,
@@ -37,8 +37,8 @@
 34,PICNICKER,Picnicker,16,,,,Female,,
 35,COOLTRAINER_M,Cool Trainer,60,,,,Male,,
 36,COOLTRAINER_F,Cool Trainer,60,,,,Female,,
-37,YOUNGSTER,Youngster,16,,,,Male,,
-38,LASS,Lass,16,,,,Female,,
+37,YOUNGSTER,Youngster,16,,,TrainerEyes_Youngster,Male,,
+38,LASS,Lass,16,,,TrainerEyes_Lass,Female,,
 39,POKEMONRANGER_M,Pokémon Ranger,60,,,,Male,,
 40,POKEMONRANGER_F,Pokémon Ranger,60,,,,Female,,
 41,PSYCHIC_M,Psychic,32,,,,Male,,

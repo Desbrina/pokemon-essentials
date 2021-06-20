@@ -35,27 +35,20 @@ module Compiler
       return nil
     end
     # Event page 1
+    page = RPG::Event::Page.new
+    page.graphic.character_name = "Object ball" if !hidden
+    page.list = []
     if !keyItem
-        page = RPG::Event::Page.new
-        page.graphic.character_name = "Object ball" if !hidden
-        page.list = []
         push_branch(page.list,sprintf("pbItemBall(:%s)",itemName))
-        push_self_switch(page.list,"A",true,1)
-        push_else(page.list,1)
-        push_branch_end(page.list,1)
-        push_end(page.list)
-        ret.pages.push(page)
     else
-            page = RPG::Event::Page.new
-            page.graphic.character_name = "Object ball" if !hidden
-            page.list = []
-            push_branch(page.list,sprintf("pbGetKeyItem(:%s)",itemName))
-            push_self_switch(page.list,"A",true,1)
-            push_else(page.list,1)
-            push_branch_end(page.list,1)
-            push_end(page.list)
-            ret.pages.push(page)
+        push_branch(page.list,sprintf("pbGetKeyItem(:%s)",itemName))
     end
+    push_self_switch(page.list,"A",true,1)
+    push_else(page.list,1)
+    push_branch_end(page.list,1)
+    push_end(page.list)
+    ret.pages.push(page)
+    
     # Event page 2
     page = RPG::Event::Page.new
     page.condition.self_switch_valid = true

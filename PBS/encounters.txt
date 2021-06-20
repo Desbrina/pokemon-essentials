@@ -8,15 +8,15 @@ Event,21
 #-------------------------------
 [006] # Route 1
 LandDay,21
-    40,RATTATA,5,10
-    20,BIDOOF,5,10
-    20,ODDISH,5,10
-    20,STARLY,5,10
+    40,RATTATA,1,5
+    20,BIDOOF,1,5
+    20,ODDISH,1,5
+    20,STARLY,1,5
 LandNight,21
-    40,RATTATA_1,5,10
-    20,BIDOOF,5,10
-    20,ODDISH,5,10
-    20,STARLY,5,10
+    40,RATTATA_1,1,5
+    20,BIDOOF,1,5
+    20,ODDISH,1,5
+    20,STARLY,1,5
 OldRod
     100,MAGIKARP,5
 GoodRod
@@ -100,12 +100,14 @@ Event
 #-------------------------------
 [015] # Route 2
 LandDay,21
-    40,RATTATA,7,10
-    20,BIDOOF,8,10
-    20,ODDISH,8,10
-    20,STARLY,7,10
+    40,RATTATA,9,13
+    20,BIDOOF,9,13
+    20,ODDISH,9,13
+    20,STARLY,8,12
 LandNight,21
-    40,RATTATA_1,8,10
-    20,BIDOOF,9,10
-    20,ODDISH,9,10
-    20,STARLY,8,10
+    40,RATTATA_1,9,13
+    20,BIDOOF,9,13
+    20,ODDISH,9,13
+    20,STARLY,8,12
+OldRod
+    100,MAGIKARP,5

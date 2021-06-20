@@ -4,3 +4,17 @@
 LoseText = "Washed out!"
 Pokemon = MAGIKARP,10
 Pokemon = MAGIKARP,15
+#-------------------------------
+[LASS,Louise]
+LoseText = "No fair!"
+Pokemon = DEERLING,7
+Pokemon = MAREEP,9
+#-------------------------------
+[YOUNGSTER,Todd]
+LoseText = "Maybe another time"
+Pokemon = RATTATA,11
+#-------------------------------
+[LASS,Donna]
+LoseText = "Humph!"
+Pokemon = PARAS,9
+Pokemon = PIKACHU,10

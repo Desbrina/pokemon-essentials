@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [VENUSAUR,1]
 FormName = Mega Venusaur
@@ -1754,3 +1754,28 @@ Color = Yellow
 FormName = Original Color
 Color = Red
 Pokedex = This gorgeous Magearna looks as it did at the time of its invention. Its luxurious decoration pleased the king's daughter.
+#-------------------------------
+[PONYTA,1]
+FormName = Galarian
+Type1 = PSYCHIC
+Pokedex =Its small horn hides a healing power. With a few rubs from this Pokémon's horn, any slight wound you have will be healed.
+Moves=1,TACKLE,1,GROWL,5,TAILWHIP,10,CONFUSION,15,FAIRYWIND,20,AGILITY,25,PSYBEAM,30,STOMP,35,HEALPULSE,41,TAKEDOWN,45,DAZZLINGGLEAM,50,PSYCHIC,55,HEALINGWISH
+Height=1.0
+Weight=30
+Kind=Unique Horn
+Abilities=RUNAWAY,PASTELVEIL
+HiddenAbility = ANTICIPATION
+Generation = 8
+#-------------------------------
+[RAPIDASH,1]
+FormName = Galarian
+Type1 = PSYCHIC
+Type2 = FAIRY
+Pokedex = Little can stand up to its psycho cut. Unleashed from this Pokémon's horn, the move will punch a hole right through a thick metal sheet.
+Moves = 0,PSYCHOCUT,1,PSYCHOCUT,1,MEGAHORN,1,TACKLE,1,QUICKATTACK,1,GROWL,1,TAILWHIP,1,CONFUSION,15,FAIRYWIND,20,AGILITY,25,PSYBEAM,30,STOMP,35,HEALPULSE,43,TAKEDOWN,49,DAZZLINGGLEAM,56,PSYCHIC,63,HEALINGWISH
+Height = 1.7
+Weight = 95
+Kind=Unique Horn
+Abilities=RUNAWAY,PASTELVEIL
+HiddenAbility = ANTICIPATION
+Generation = 8

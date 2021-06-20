@@ -1,13 +1,13 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [000]
 Home = 38,5,8,8
-WildBattleBGM = Battle wild.mid
-TrainerBattleBGM = Battle trainer.mid
-WildVictoryME = Battle victory wild.ogg
-TrainerVictoryME = Battle victory trainer.ogg
-SurfBGM = Surfing.mid
-BicycleBGM = Bicycle.mid
+WildBattleBGM = Battle_Wild.mp3
+TrainerBattleBGM = Battle_Trainer.mp3
+WildVictoryME = Victory_Wild.mp3
+TrainerVictoryME = Victory_Trainer.mp3
+SurfBGM = Surf.mp 3
+BicycleBGM = Bicycle.mp3
 PlayerA = POKEMONTRAINER_Leaf,girl,girl-bike,girl-surf,girl-run,girl_dive_offset,girl-fish,girl-fish
 #-------------------------------
 [001]
@@ -90,3 +90,18 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,2,11
 MapSize = 1,11
+#-------------------------------
+[016]
+# Colerk
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,13
+#-------------------------------
+[017]
+# Pokémon Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 16,13,24
+MapPosition = 0,2,13
