@@ -1,4 +1,4 @@
-# See the documentation on the wiki to learn how to edit this file.
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [000]
 Home = 38,5,8,8
@@ -104,4 +104,18 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 HealingSpot = 16,13,24
+MapPosition = 0,2,13
+#-------------------------------
+[018]
+# Move Relearner & Name Rater
+Outdoor = false
+ShowArea = false
+Bicycle = false
+MapPosition = 0,2,13
+#-------------------------------
+[019]
+# Pokémon Massager
+Outdoor = false
+ShowArea = false
+Bicycle = false
 MapPosition = 0,2,13
