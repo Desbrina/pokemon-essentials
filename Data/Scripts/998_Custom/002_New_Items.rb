@@ -54,9 +54,9 @@ ItemHandlers::UseInField.add(:POCKETPC,proc{|item|
 
 ItemHandlers::UseOnPokemon.add(:SHIABERRY,proc { |item,pkmn,scene|
    #next pbHPItem(pkmn,10,scene)
-   # Changes: SHINY, IV, Hidden Ability, Pokerus
-   chance = 1 #rand(1,5)
-   if chance == 1
+   # Changes: SHINY, IV, Hidden Ability, Pokérus
+   chance = 3 #rand(1,4)
+   if chance == 1 # Shiny
         if pkmn.shiny?
            scene.pbDisplay(_INTL("It won't have any effect."))
         else
@@ -64,6 +64,18 @@ ItemHandlers::UseOnPokemon.add(:SHIABERRY,proc { |item,pkmn,scene|
            pkmn.shiny = true
         end
    end
+   if chance == 2 # IV
+                               
+   end
+   if chance == 3 # Hidden Ability
+       pkmn.ability_index = 2
+       scene.pbDisplay(_INTL("{1} got its hidden ability.",pkmn.name))
+   end
+   if chance == 4 # Pokérus
+       pkmn.givePokerus
+       scene.pbDisplay(_INTL("{1} got Pokérus.",pkmn.name))
+   end
+                               
    pkmn.calc_stats
    next 1
 })
