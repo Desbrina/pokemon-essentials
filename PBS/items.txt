@@ -654,4 +654,4 @@
 638,POCKETPC,Pocket PC,Pocket PCs,8,0,"Allows you to access your PC on the move",2,0,6
 639,POKEDEX,Pokédex,Pokédex,8,0,"A report on the Vivillon. Lists those you have caught",2,0,6
 640,VIVILLONREPORT,Vivillon Report,Vivillon Reports,8,0,"A report on the Vivillon. Lists those you have caught",2,0,6
-641,SHIABERRY,Shia Berry,Shia Berries,5,20,"This berry has some strange side effects when used on a Pokémon",0,0,5,
+641,SHIABERRY,Shia Berry,Shia Berries,5,20,"This berry has some strange side effects when used on a Pokémon",1,0,5,
