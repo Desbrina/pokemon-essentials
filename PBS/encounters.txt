@@ -85,7 +85,9 @@ Cave,5
     10,GRAVELER,16
     10,ONIX,15
 PhenomenonCave
-    100,ZUBAT,5
+    60,ZUBAT,10,17
+    10,CHANSEY,15
+    10,AUDINO,15
 #-------------------------------
 [014] # Crescent Cave B2F
 OldRod
