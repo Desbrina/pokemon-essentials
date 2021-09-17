@@ -1,0 +1,99 @@
+# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[004] # Lab
+Event,21
+    33,PANPOUR,30
+    33,PANSAGE,30
+    33,PANSEAR,30
+#-------------------------------
+[006] # Route 1
+LandDay,21
+    40,RATTATA,5,10
+    20,BIDOOF,5,10
+    20,ODDISH,5,10
+    20,STARLY,5,10
+LandNight,21
+    40,RATTATA_1,5,10
+    20,BIDOOF,5,10
+    20,ODDISH,5,10
+    20,STARLY,5,10
+OldRod
+    100,MAGIKARP,5
+GoodRod
+    50,MAGIKARP,15
+    50,STARYU,15
+SuperRod
+    50,MAGIKARP,40
+    50,TENTACRUEL,40
+Event,21
+    100,SUDOWOODO,30
+#-------------------------------
+[007] # Foren
+OldRod
+    80,MAGIKARP,5,15
+    20,STARYU,11,14
+#-------------------------------
+[008] # Forest Gardens
+Land,33
+    75,SUNKERN,5,9
+    24,SCATTERBUG,5,7
+    1,SUNFLORA,10
+HeadbuttHigh
+    34,PINECO,9
+    33,CATERPIE,5
+    33,WEEDLE,5
+HeadbuttLow
+    75,LEDYBA,10
+    25,SPINARAK,10
+OldRod
+    100,MAGIKARP,5
+#-------------------------------
+[009] # Vivillon House
+Event,21
+    5,VIVILLON,1
+    5,VIVILLON_1,1
+    5,VIVILLON_10,1
+    5,VIVILLON_11,1
+    5,VIVILLON_12,1
+    5,VIVILLON_13,1
+    5,VIVILLON_14,1
+    5,VIVILLON_15,1
+    5,VIVILLON_16,1
+    5,VIVILLON_17,1
+    5,VIVILLON_18,1
+    5,VIVILLON_19,1
+    5,VIVILLON_2,1
+    5,VIVILLON_3,1
+    5,VIVILLON_4,1
+    5,VIVILLON_5,1
+    5,VIVILLON_6,1
+    5,VIVILLON_7,1
+    5,VIVILLON_8,1
+    5,VIVILLON_9,1
+#-------------------------------
+[010] # Crescent Cave 1F
+Event,21
+    100,ROCKRUFF,15
+#-------------------------------
+[013] # Crescent Cave B1F
+OldRod
+    80,MAGIKARP,9,14
+    20,STARYU,13
+Cave,5
+    60,ZUBAT,11,16
+    20,GEODUDE,10
+    10,GRAVELER,16
+    10,ONIX,15
+#-------------------------------
+[014] # Crescent Cave B2F
+OldRod
+    80,MAGIKARP,9,14
+    20,STARYU,13
+Cave,5
+    60,ZUBAT,11,16
+    10,GEODUDE,10
+    10,DIGLETT,10
+    10,GRAVELER,16
+    10,ONIX,15
+Event
+    100,SABLEYE,15
