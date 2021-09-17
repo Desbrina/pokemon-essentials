@@ -74,8 +74,6 @@ Event,21
 [010] # Crescent Cave 1F
 Event,21
     100,ROCKRUFF,15
-PhenomenonCave
-    100,ZUBAT,5
 #-------------------------------
 [013] # Crescent Cave B1F
 OldRod
@@ -86,6 +84,8 @@ Cave,5
     20,GEODUDE,10
     10,GRAVELER,16
     10,ONIX,15
+PhenomenonCave
+    100,ZUBAT,5
 #-------------------------------
 [014] # Crescent Cave B2F
 OldRod
