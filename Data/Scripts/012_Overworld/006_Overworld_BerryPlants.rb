@@ -529,6 +529,12 @@ def pbPickBerry(berry, qty = 1)
     pocket = berry.pocket
     pbMessage(_INTL("{1} put the \\c[1]{2}\\c[0] in the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket.\1",
        $Trainer.name,itemname,pocket,PokemonBag.pocketNames()[pocket]))
+    # SHIA Berry
+    chance = rand(1,10)
+    if chance == 1
+        $PokemonBag.pbStoreItem(:SHIABERRY,1)
+        pbMessage(_INTL("You also picked a \\c[1]Shia Berry\\c[0].\\wtnp[30]",itemname))
+    end
     if Settings::NEW_BERRY_PLANTS
       pbMessage(_INTL("The soil returned to its soft and earthy state."))
       berryData=[0,nil,0,0,0,0,0,0]
