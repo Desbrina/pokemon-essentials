@@ -55,7 +55,7 @@ ItemHandlers::UseInField.add(:POCKETPC,proc{|item|
 ItemHandlers::UseOnPokemon.add(:SHIABERRY,proc { |item,pkmn,scene|
    #next pbHPItem(pkmn,10,scene)
    # Changes: SHINY, IV, Hidden Ability, Pokérus
-   chance = 4 #rand(1,4)
+   chance = rand(1,4)
    if chance == 1 # Shiny
         if pkmn.shiny?
            scene.pbDisplay(_INTL("It won't have any effect."))
@@ -65,11 +65,35 @@ ItemHandlers::UseOnPokemon.add(:SHIABERRY,proc { |item,pkmn,scene|
         end
    end
    if chance == 2 # IV
-                               
+      ivChance = rand(1, 6)
+      if ivChance == 1 # Def
+           pkmn.iv[:DEFENSE] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in Defense.",pkmn.name))
+       end
+       if ivChance == 2 #HP
+           pkmn.iv[:HP] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in HP.",pkmn.name))
+       end
+       if ivChance == 3 #Attack
+           pkmn.iv[:ATTACK] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in Attack.",pkmn.name))
+       end
+       if ivChance == 4 #Special Attack
+           pkmn.iv[:SPECIAL_ATTACK] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in Special Attack.",pkmn.name))
+       end
+       if ivChance == 5 #Special Defense
+           pkmn.iv[:SPECIAL_DEFENSE] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in Special Defense.",pkmn.name))
+       end
+       if ivChance == 6 #Speed
+           pkmn.iv[:SPEED] = 31
+           scene.pbDisplay(_INTL("{1} gained max IVs in Speed.",pkmn.name))
+       end
    end
    if chance == 3 # Hidden Ability
        pkmn.ability_index = 2
-       scene.pbDisplay(_INTL("{1} got its hidden ability.",pkmn.name))
+       scene.pbDisplay(_INTL("{1} gained its hidden ability.",pkmn.name))
    end
    if chance == 4 # Pokérus
        pkmn.givePokerus
