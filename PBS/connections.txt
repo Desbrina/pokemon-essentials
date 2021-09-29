@@ -10,3 +10,7 @@
 3,South,0,6,North,0
 # Forest Gardens (8) - Route 1 (6)
 8,West,0,6,East,47
+# Colerk (16) - Route 2 (15)
+16,North,0,15,South,10
+# Route 3 (20) - Colerk (16)
+20,West,0,16,East,31

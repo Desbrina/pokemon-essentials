@@ -208,6 +208,17 @@ PokemonDebugMenuCommands.register("setlevel", {
          _INTL("Set the Pokémon's level (max. {1}).", params.maxNumber), params) { screen.pbUpdate }
       if level != pkmn.level
         pkmn.level = level
+          newspecies = pkmn.check_evolution_on_level_up
+          if newspecies
+            pbFadeOutInWithMusic {
+              evo = PokemonEvolutionScene.new
+              evo.pbStartScreen(pkmn,newspecies)
+              evo.pbEvolution
+              evo.pbEndScreen
+            }
+          end
+        pkmn.reset_moves
+        pkmn.heal
         pkmn.calc_stats
         screen.pbRefreshSingle(pkmnid)
       end

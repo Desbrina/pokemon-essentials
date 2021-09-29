@@ -1,0 +1,121 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[000]
+Home = 38,5,8,8
+WildBattleBGM = Battle_Wild.mp3
+TrainerBattleBGM = Battle_Trainer.mp3
+WildVictoryME = Victory_Wild.mp3
+TrainerVictoryME = Victory_Trainer.mp3
+SurfBGM = Surf.mp 3
+BicycleBGM = Bicycle.mp3
+PlayerA = POKEMONTRAINER_Leaf,girl,girl-bike,girl-surf,girl-run,girl_dive_offset,girl-fish,girl-fish
+#-------------------------------
+[001]
+# Home
+Outdoor = false
+MapPosition = 0,2,7
+#-------------------------------
+[003]
+# Vien
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 3,25,16
+MapPosition = 0,2,7
+#-------------------------------
+[004]
+# Lab
+Outdoor = false
+MapPosition = 0,2,7
+#-------------------------------
+[006]
+# Route 1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,8
+MapSize = 1,11
+#-------------------------------
+[007]
+# Foren
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 7,13,12
+MapPosition = 0,2,10
+#-------------------------------
+[008]
+# Forest Gardens
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,9
+#-------------------------------
+[009]
+# Vivillon House
+Outdoor = false
+ShowArea = false
+Bicycle = false
+BicycleAlways = false
+MapPosition = 0,3,9
+#-------------------------------
+[010]
+# Crescent Cave 1F
+ShowArea = true
+MapPosition = 0,3,10
+#-------------------------------
+[011]
+# Pokémon Center
+HealingSpot = 7,13,12
+MapPosition = 0,2,10
+#-------------------------------
+[012]
+# Fisherman Sam's House
+MapPosition = 0,2,10
+#-------------------------------
+[013]
+# Crescent Cave B1F
+ShowArea = true
+MapPosition = 0,3,10
+#-------------------------------
+[014]
+# Crescent Cave B2F
+ShowArea = true
+MapPosition = 0,3,10
+#-------------------------------
+[015]
+# Route 2
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,11
+MapSize = 1,11
+#-------------------------------
+[016]
+# Colerk
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,13
+#-------------------------------
+[017]
+# Pokémon Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 16,13,24
+MapPosition = 0,2,13
+#-------------------------------
+[018]
+# Move Relearner & Name Rater
+Outdoor = false
+ShowArea = false
+Bicycle = false
+MapPosition = 0,2,13
+#-------------------------------
+[019]
+# Pokémon Massager
+Outdoor = false
+ShowArea = false
+Bicycle = false
+MapPosition = 0,2,13

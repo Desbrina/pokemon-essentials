@@ -115,3 +115,21 @@ LandNight,21
     20,STARLY,8,12
 OldRod
     100,MAGIKARP,5
+#-------------------------------
+[020] # Route 3
+Land
+    5,DEERLING,13,15
+    50,SPEWPA,10,15
+    35,RATTATA,13,17
+    10,SUNKERN,13,19
+HeadbuttHigh
+    34,PINECO,14
+    33,METAPOD,15
+    33,KAKUNA,15
+HeadbuttLow
+    75,LEDYBA,13
+    25,SPINARAK,14
+OldRod
+    100,MAGIKARP,10
+PhenomenonGrass
+    100,AUDINO,15

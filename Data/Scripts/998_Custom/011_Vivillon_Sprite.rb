@@ -9,11 +9,11 @@ def pbVivillonSprite()
   
     if name == "VivillonSprite"
       form = $game_variables[105]
-      formImage = _INTL("666_{1}", form)
+      formImage = _INTL("VIVILLON_{1}", form)
       if form > 0
         event.character_name=formImage
       else
-        event.character_name="666"
+        event.character_name="VIVILLON"
       end
     end
   end
