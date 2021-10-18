@@ -1,0 +1,47 @@
+# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[FISHERMAN,Sam]
+LoseText = "Washed out!"
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,15
+#-------------------------------
+[LASS,Louise]
+LoseText = "No fair!"
+Pokemon = DEERLING,7
+Pokemon = MAREEP,9
+#-------------------------------
+[YOUNGSTER,Todd]
+LoseText = "Maybe another time"
+Pokemon = RATTATA,11
+#-------------------------------
+[LASS,Donna]
+LoseText = "Humph!"
+Pokemon = PARAS,9
+Pokemon = PIKACHU,10
+#-------------------------------
+[SCIENTIST_M,Melvin]
+LoseText = "I have nothing to say to you"
+Pokemon = SABLEYE,10
+	Shadow = yes
+#-------------------------------
+[LASS,Melody]
+LoseText = "Not my cute Pokémon"
+Pokemon = PIKACHU,10
+Pokemon = DEERLING,11
+#-------------------------------
+[BUGCATCHER,Mitch]
+LoseText = "Squashed"
+Pokemon = WEEDLE,9
+Pokemon = METAPOD,13
+#-------------------------------
+[BUGCATCHER,Terry]
+LoseText = ""
+Pokemon = CATERPIE,9
+Pokemon = KAKUNA,13
+#-------------------------------
+[LASS,Lottie]
+LoseText = "Next time I'll win"
+Pokemon = VIVILLON,10
+    Form = 10
+Pokemon = VIVILLON,10
+    Form = 3
