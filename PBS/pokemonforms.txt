@@ -1779,3 +1779,6 @@ Kind=Unique Horn
 Abilities=RUNAWAY,PASTELVEIL
 HiddenAbility = ANTICIPATION
 Generation = 8
+#-------------------------------
+[ZAPDOS,1]
+FormName = Galarian

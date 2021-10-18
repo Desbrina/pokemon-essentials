@@ -45,3 +45,27 @@ Pokemon = VIVILLON,10
     Form = 10
 Pokemon = VIVILLON,10
     Form = 3
+#-------------------------------
+[BIRDKEEPER,Scott]]
+LoseText = "My family will beat you."
+Pokemon = ARTICUNO,50
+#-------------------------------
+[BIRDKEEPER,VIRGIL]]
+LoseText = "My family will beat you."
+Pokemon = ARTICUNO_1,50
+#-------------------------------
+[BIRDKEEPER,JOHN]]
+LoseText = "My family will beat you."
+Pokemon = ZAPDOS_1,50
+#-------------------------------
+[BIRDKEEPER,GORDON]]
+LoseText = "My family will beat you."
+Pokemon = ZAPDOS,50
+#-------------------------------
+[BIRDKEEPER,ALAN]]
+LoseText = "My family will beat you."
+Pokemon = MOLTRES,50
+#-------------------------------
+[BIRDKEEPER,JEFF]]
+LoseText = "You've beat us all"
+Pokemon = MOLTRES_1,50
