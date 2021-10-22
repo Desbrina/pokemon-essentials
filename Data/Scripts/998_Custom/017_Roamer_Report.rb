@@ -51,17 +51,20 @@ class RoamingReport_Scene
     curmap1 = $PokemonGlobal.roamPosition[pos1]
     
     
-  # Pokemon 2
-  pos2 = @index+1
-  pokemon = Settings::ROAMING_SPECIES[pos2][0]
-  species_data = GameData::Species.get(pokemon)
-  @sprites["pokemon2"] = PokemonSprite.new(@viewport)
-  @sprites["pokemon2"].setOffset(PictureOrigin::Center)
-  # Changed the position of Pokémon Battler
-  @sprites["pokemon2"].x = 375
-  @sprites["pokemon2"].y = 150
-  @sprites["pokemon2"].setSpeciesBitmap(pokemon, 0, species_data.form)
-  curmap2 = $PokemonGlobal.roamPosition[pos2]
+      # Pokemon 2
+      pos2 = @index+1
+      pokemon = Settings::ROAMING_SPECIES[pos2][0]
+      species_data = GameData::Species.get(pokemon)
+      @sprites["pokemon2"] = PokemonSprite.new(@viewport)
+      @sprites["pokemon2"].setOffset(PictureOrigin::Center)
+      # Changed the position of Pokémon Battler
+      @sprites["pokemon2"].x = 375
+      @sprites["pokemon2"].y = 150
+      @sprites["pokemon2"].setSpeciesBitmap(pokemon, 0, species_data.form)
+      curmap2 = $PokemonGlobal.roamPosition[pos2]
+      
+      p $PokemonGlobal.roamPokemon[pos1]
+      p $PokemonGlobal.roamPokemonCaught[pos1]
     
     pbDrawTextPositions(@sprites["overlay"].bitmap,[
            [_INTL("Roaming Report"),9,0,0,BASECOLOR,SHADOWCOLOR],
