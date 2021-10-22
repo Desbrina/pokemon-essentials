@@ -24,5 +24,14 @@ def getVivillonFormName(form = 0)
   species = forms[form]
   species_data = GameData::Species.get(species)
   
-  return species_data.real_form_name
+  pattern = species_data.real_form_name
+  
+  if form == 0
+     pattern = "Meadow Pattern"
+  end
+  
+  p form
+  p pattern
+  
+  return pattern
 end
