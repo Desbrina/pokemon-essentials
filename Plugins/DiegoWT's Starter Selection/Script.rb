@@ -15,16 +15,27 @@ class DiegoWTsStarterSelection
     
     @sprites["starterbg"] = IconSprite.new(0,0,@viewport)  
     @sprites["starterbg"].opacity = 0
-    @sprites["typebg"] = IconSprite.new(0,0,@viewport)    
-    @sprites["typebg"].opacity = 0
-    if StarterSelSettings::INSTYLE == 2
+    if StarterSelSettings::INSTYLE == 2 # Set up graphics' style to match BW or HGSS style
       @sprites["starterbg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg_custom")
       @sprites["starterbg"].color = Color.new(255,255,255,105)
-      @sprites["typebg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg_custom")
     else
       @sprites["starterbg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg")
-      @sprites["typebg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg")
-      @sprites["typebg"].color = Color.new(-255,-255,-255,25)
+    end
+    
+    if StarterSelSettings::TYPE2COLOR # Set up graphics for the background to match with the type color
+      @sprites["type1"] = IconSprite.new(0,0,@viewport)    
+      @sprites["type1"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/typegradient")
+      @sprites["type1"].opacity = 0
+      @sprites["type2"] = IconSprite.new(0,0,@viewport)    
+      @sprites["type2"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/typegradient")
+      @sprites["type2"].mirror = true
+      @sprites["type2"].opacity = 0
+    else
+      @sprites["typebg"] = IconSprite.new(0,0,@viewport)    
+      @sprites["typebg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg_custom") if StarterSelSettings::INSTYLE == 2
+      @sprites["typebg"].setBitmap("Graphics/Pictures/DiegoWT's Starter Selection/starterbg")        if StarterSelSettings::INSTYLE == 1
+      @sprites["typebg"].color = Color.new(-255,-255,-255,25)                                        if StarterSelSettings::INSTYLE == 1
+      @sprites["typebg"].opacity = 0
     end
     
     @sprites["base"] = IconSprite.new(0,138,@viewport)    
@@ -320,67 +331,86 @@ class DiegoWTsStarterSelection
     end
   end
   
-  def pbChooseBall
+  def pbTypeColor(type)
     # Organizing Type names and background colors
-    case @pokemon.type1
+    case type
     when :NORMAL
       @type = "Normal"
-      @sprites["typebg"].tone = Tone.new(95.25,88.5,63.0)
+      typeColor = Tone.new(95.25,88.5,63.0)
     when :FIGHTING
       @type = "Fighting"
-      @sprites["typebg"].tone = Tone.new(126.75,37.5,31.5)
+      typeColor = Tone.new(126.75,37.5,31.5)
     when :FLYING
       @type = "Flying"
-      @sprites["typebg"].tone = Tone.new(109.0,90.0,121.0)
+      typeColor = Tone.new(109.0,90.0,121.0)
     when :POISON
       @type = "Poison"
-      @sprites["typebg"].tone = Tone.new(87.25,31.0,82.75)
+      typeColor = Tone.new(87.25,31.0,82.75)
     when :GROUND
       @type = "Ground"
-      @sprites["typebg"].tone = Tone.new(108.0,91.0,43.0)
+      typeColor = Tone.new(108.0,91.0,43.0)
     when :ROCK
       @type = "Rock"
-      @sprites["typebg"].tone = Tone.new(83.0,74.0,28.0)
+      typeColor = Tone.new(83.0,74.0,28.0)
     when :BUG
       @type = "Bug"
-      @sprites["typebg"].tone = Tone.new(90.0,108.0,2.0)
+      typeColor = Tone.new(90.0,108.0,2.0)
     when :GHOST
       @type = "Ghost"
-      @sprites["typebg"].tone = Tone.new(58.55,43.0,95.25)
+      typeColor = Tone.new(58.55,43.0,95.25)
     when :STEEL
       @type = "Steel"
-      @sprites["typebg"].tone = Tone.new(79.5,79.5,79.5)
+      typeColor = Tone.new(79.5,79.5,79.5)
     when :QMARKS
       @type = "???"
-      @sprites["typebg"].tone = Tone.new(63.0,95.25,79.5)
+      typeColor = Tone.new(63.0,95.25,79.5)
     when :FIRE
       @type = "Fire"
-      @sprites["typebg"].tone = Tone.new(169.0,93.0,42.0)
+      typeColor = Tone.new(169.0,93.0,42.0)
     when :WATER
       @type = "Water"
-      @sprites["typebg"].tone = Tone.new(42.0,96.0,169.0)
+      typeColor = Tone.new(42.0,96.0,169.0)
     when :GRASS
       @type = "Grass"
-      @sprites["typebg"].tone = Tone.new(65.25,118.5,39.0)
+      typeColor = Tone.new(65.25,118.5,39.0)
     when :ELECTRIC
       @type = "Electric"
-      @sprites["typebg"].tone = Tone.new(135.0,126.0,23.25)
+      typeColor = Tone.new(135.0,126.0,23.25)
     when :PSYCHIC
       @type = "Psychic"
-      @sprites["typebg"].tone = Tone.new(128.25,51.75,96.0)
+      typeColor = Tone.new(128.25,51.75,96.0)
     when :ICE
       @type = "Ice"
-      @sprites["typebg"].tone = Tone.new(55.5,102.75,102.75)
+      typeColor = Tone.new(55.5,102.75,102.75)
     when :DRAGON
       @type = "Dragon"
-      @sprites["typebg"].tone = Tone.new(54.75,43.5,114.75)
+      typeColor = Tone.new(54.75,43.5,114.75)
     when :DARK
       @type = "Dark"
-      @sprites["typebg"].tone = Tone.new(-23.0,-40.0,-56.0)
+      typeColor = Tone.new(-23.0,-40.0,-56.0)
     when :FAIRY
       @type = "Fairy"
-      @sprites["typebg"].tone = Tone.new(136.75,41.5,73.0)
+      typeColor = Tone.new(136.75,41.5,73.0)
     end
+    return typeColor  if type = @pokemon.type1
+    return type2Color = typeColor if type = @pokemon.type2
+  end
+  
+  def pbChooseBall
+    typeColor  = pbTypeColor(@pokemon.type1)
+    if @pokemon.type2 != @pokemon.type1 && StarterSelSettings::TYPE2COLOR
+      type2Color = pbTypeColor(@pokemon.type2)
+    elsif StarterSelSettings::TYPE2COLOR
+      type2Color = typeColor
+    end
+    
+    if StarterSelSettings::TYPE2COLOR
+      @sprites["type1"].tone  = typeColor
+      @sprites["type2"].tone  = type2Color
+    else
+      @sprites["typebg"].tone = typeColor
+    end
+    
     @pkmnname = @pokemon.name
     @sprites["textbox"].y = @sprites["textbox"].y - 16
     @sprites["textbox"].text = _INTL("<ac>Will you choose #{@pkmnname}, <br>the #{@type}-type Pokémon?</ac>")
@@ -393,7 +423,12 @@ class DiegoWTsStarterSelection
     20.times do
       pbUpdateSpriteHash(@sprites)
       pbAnimation if @frame < 16
-      @sprites["typebg"].opacity += @sprites["starterbg"].opacity/18
+      if StarterSelSettings::TYPE2COLOR
+        @sprites["type1"].opacity += @sprites["starterbg"].opacity/18
+        @sprites["type2"].opacity += @sprites["starterbg"].opacity/18 
+      else
+        @sprites["typebg"].opacity += @sprites["starterbg"].opacity/18
+      end
       @sprites["ballbase"].opacity+=255/18
       @sprites["base"].opacity -= 105/10
       for i in 1..3
@@ -422,13 +457,12 @@ class DiegoWTsStarterSelection
       pbWait(1)
     end
     @sprites["ballbase"].x = @sprites["ball_2"].x if @select != 1
+    GameData::Species.play_cry_from_species(@pkmn_array[@select-1]) if StarterSelSettings::STARTERCRY 
     10.times do
       pbUpdateSpriteHash(@sprites)
       @sprites["pkmn_#{@select}"].opacity += 255/10
       pbWait(1)
     end
-    #pbSEPlay(sprintf("%03dCry",@pkmn_array[@select-1]))
-    GameData::Species.play_cry_from_species(@pkmn_array[@select-1])
     pbChoiceBoxes(0) # Turn on the choice boxes
     confirm = pbConfirm
     if confirm == 1
@@ -436,7 +470,7 @@ class DiegoWTsStarterSelection
       $game_variables[7] = @select if $game_variables[7] == 0
       @endscene = 1
       pbCloseScene
-      pbAddPokemon(@pkmn_array[@select-1],StarterSelSettings::STARTERL)
+      pbAddPokemon(@data["pkmn_#{@select}"],StarterSelSettings::STARTERL)
     else
       @sprites["textbox"].y = @oldMsgY
       @sprites["textbox"].text = _INTL("<ac>Choose a Pokémon.</ac>")
@@ -469,7 +503,12 @@ class DiegoWTsStarterSelection
       @sprites["selection"].visible = true
       20.times do
         pbUpdateSpriteHash(@sprites)
-        @sprites["typebg"].opacity -= @sprites["starterbg"].opacity/18
+        if StarterSelSettings::TYPE2COLOR
+          @sprites["type1"].opacity -= @sprites["starterbg"].opacity/18
+          @sprites["type2"].opacity -= @sprites["starterbg"].opacity/18
+        else
+          @sprites["typebg"].opacity -= @sprites["starterbg"].opacity/18
+        end
         @sprites["ballbase"].opacity-=255/18
         @sprites["base"].opacity += 105/10
         for i in 1..3
@@ -530,7 +569,12 @@ class DiegoWTsStarterSelection
     @sprites["selection"].visible = false
     25.times do
       @sprites["starterbg"].opacity -= 255/20
-      @sprites["typebg"].opacity -= 255/20
+      if StarterSelSettings::TYPE2COLOR
+        @sprites["type1"].opacity -= 255/20
+        @sprites["type2"].opacity -= 255/20
+      else
+        @sprites["typebg"].opacity -= 255/20
+      end
       @sprites["ballbase"].opacity -= 255/20
       @sprites["pkmn_#{@select}"].opacity -= 255/20
       @sprites["textwnd"].opacity -= 255/20

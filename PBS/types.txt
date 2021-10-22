@@ -1,4 +1,4 @@
-# See the documentation on the wiki to learn how to edit this file.
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [0]
 Name = Normal
@@ -127,9 +127,3 @@ IsSpecialType = true
 Weaknesses = POISON,STEEL
 Resistances = FIGHTING,BUG,DARK
 Immunities = DRAGON
-#-------------------------------
-[19]
-Name=Shadow
-InternalName=SHADOW
-IsSpecialType=true
-Resistances=SHADOW

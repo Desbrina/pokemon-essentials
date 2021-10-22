@@ -22,7 +22,7 @@ Pokemon = PIKACHU,10
 [SCIENTIST_M,Melvin]
 LoseText = "I have nothing to say to you"
 Pokemon = SABLEYE,10
-	Shadow = yes
+    Shadow = yes
 #-------------------------------
 [LASS,Melody]
 LoseText = "Not my cute Pokémon"
@@ -35,7 +35,6 @@ Pokemon = WEEDLE,9
 Pokemon = METAPOD,13
 #-------------------------------
 [BUGCATCHER,Terry]
-LoseText = ""
 Pokemon = CATERPIE,9
 Pokemon = KAKUNA,13
 #-------------------------------
@@ -46,26 +45,29 @@ Pokemon = VIVILLON,10
 Pokemon = VIVILLON,10
     Form = 3
 #-------------------------------
-[BIRDKEEPER,Scott]]
+[BIRDKEEPER,Scott]
 LoseText = "My family will beat you."
 Pokemon = ARTICUNO,50
 #-------------------------------
-[BIRDKEEPER,VIRGIL]]
+[BIRDKEEPER,Virgil]
 LoseText = "My family will beat you."
-Pokemon = ARTICUNO_1,50
+Pokemon = ARTICUNO,50
+    Form = 1
 #-------------------------------
-[BIRDKEEPER,JOHN]]
+[BIRDKEEPER,John]
 LoseText = "My family will beat you."
-Pokemon = ZAPDOS_1,50
+Pokemon = ZAPDOS,50
+    Form = 1
 #-------------------------------
-[BIRDKEEPER,GORDON]]
+[BIRDKEEPER,Gordon]
 LoseText = "My family will beat you."
 Pokemon = ZAPDOS,50
 #-------------------------------
-[BIRDKEEPER,ALAN]]
+[BIRDKEEPER,Alan]
 LoseText = "My family will beat you."
 Pokemon = MOLTRES,50
 #-------------------------------
-[BIRDKEEPER,JEFF]]
-LoseText = "You've beat us all"
-Pokemon = MOLTRES_1,50
+[BIRDKEEPER,Jeff]
+LoseText = "You've beaten us all"
+Pokemon = MOLTRES,50
+    Form = 1

@@ -117,7 +117,7 @@ module Settings
   # Whether you need at least a certain number of badges to use some hidden
   # moves in the field (true), or whether you need one specific badge to use
   # them (false). The amounts/specific badges are defined below.
-  FIELD_MOVES_COUNT_BADGES = true
+  FIELD_MOVES_COUNT_BADGES = false
   # Depending on FIELD_MOVES_COUNT_BADGES, either the number of badges required
   # to use each hidden move in the field, or the specific badge number required
   # to use each move. Remember that badge 0 is the first badge, badge 1 is the
@@ -235,16 +235,14 @@ module Settings
   # A list of maps used by roaming Pokémon. Each map has an array of other maps
   # it can lead to.
   ROAMING_AREAS = {
-    5  => [   21, 28, 31, 39, 41, 44, 47, 66, 69],
-    21 => [5,     28, 31, 39, 41, 44, 47, 66, 69],
-    28 => [5, 21,     31, 39, 41, 44, 47, 66, 69],
-    31 => [5, 21, 28,     39, 41, 44, 47, 66, 69],
-    39 => [5, 21, 28, 31,     41, 44, 47, 66, 69],
-    41 => [5, 21, 28, 31, 39,     44, 47, 66, 69],
-    44 => [5, 21, 28, 31, 39, 41,     47, 66, 69],
-    47 => [5, 21, 28, 31, 39, 41, 44,     66, 69],
-    66 => [5, 21, 28, 31, 39, 41, 44, 47,     69],
-    69 => [5, 21, 28, 31, 39, 41, 44, 47, 66    ]
+    3  => [6], # Vien
+    6  => [3, 8, 7], # Route 1
+    8  => [6], # Forest Gardens
+    7  => [6, 15], # Foren
+    15 => [7, 16], # Route 2
+    16 => [15, 20], # Colerk
+    20 => [16, 21], # Route 3
+    21 => [20] # Goldenleaf
   }
   # A set of arrays, each containing the details of a roaming Pokémon. The
   # information within each array is as follows:
@@ -256,8 +254,12 @@ module Settings
   #   * Name of BGM to play for that encounter (optional).
   #   * Roaming areas specifically for this Pokémon (optional).
   ROAMING_SPECIES = [
-    [:LATIAS, 30, 53, 0, "Battle roaming"],
-    [:LATIOS, 30, 53, 0, "Battle roaming"]
+    [:ARTICUNO, 50, 108, 0, "Battle roaming"],
+    [:ARTICUNO_1, 50, 108, 0, "Battle roaming"],
+    [:MOLTRES, 50, 108, 0, "Battle roaming"],
+    [:MOLTRES_1, 50, 108, 0, "Battle roaming"],
+    [:ZAPDOS, 50, 108, 0, "Battle roaming"],
+    [:ZAPDOS_1, 50, 108, 0, "Battle roaming"]
   ]
 
   #=============================================================================
@@ -285,7 +287,7 @@ module Settings
   # Poké Center (and doesn't need to be told about it again).
   SEEN_POKERUS_SWITCH       = 2
   # The Game Switch which, while ON, makes all wild Pokémon created be shiny.
-  SHINY_WILD_POKEMON_SWITCH = 31
+  SHINY_WILD_POKEMON_SWITCH = 107
   # The Game Switch which, while ON, makes all Pokémon created considered to be
   # met via a fateful encounter.
   FATEFUL_ENCOUNTER_SWITCH  = 32

@@ -32,6 +32,16 @@ ItemHandlers::UseInField.add(:VIVILLONREPORT,proc{|item|
   next 1
 })
 
+ItemHandlers::UseFromBag.add(:ROAMERREPORT,proc{|item|
+  pbRoamingReportStart()
+  next 1
+})
+
+ItemHandlers::UseInField.add(:ROAMERREPORT,proc{|item|
+  pbRoamingReportStart()
+  next 1
+})
+
 ItemHandlers::UseFromBag.add(:ENCOUNTERTESTER,proc{|item|
   pbEncounterTester()
   next 1

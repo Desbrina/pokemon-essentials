@@ -1,0 +1,18 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# Colerk (16) - Route 3 (20)
+16,East,31,20,West,0
+# Town 4 (21) - Route 3 (20)
+21,West,0,20,East,6
+# Route 2 (15) - Colerk (16)
+15,South,10,16,North,0
+# Foren (7) - Route 2 (15)
+7,South,0,15,North,2
+# Route 1 (6) - Foren (7)
+6,South,2,7,North,0
+# Forest Gardens (8) - Foren (7)
+8,West,44,7,East,0
+# Vien (3) - Route 1 (6)
+3,South,0,6,North,0
+# Forest Gardens (8) - Route 1 (6)
+8,West,0,6,East,47
