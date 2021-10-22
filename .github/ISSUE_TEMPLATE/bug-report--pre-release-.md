@@ -17,6 +17,9 @@ Steps to reproduce the behaviour:
 3. Scroll down to '....'
 4. See error
 
+**Location**
+Location in game where the bug occurs
+
 **Current behaviour**
 What currently happens 
 
